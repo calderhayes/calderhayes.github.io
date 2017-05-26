@@ -93,12 +93,10 @@
               <br />
               1 (519) 111 1111
             </p>-->
-            <p>
+            <p id="email">
               <strong><i class="fa fa-envelope"></i>  Email Address</strong>
               <br />
-              calderhayes@gmail.com
             </p>
-            <p></p>
           </div>
         </div>   
       </div>
@@ -209,6 +207,12 @@
 
   <!-- Bootstrap Core JavaScript -->
   <script src="libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    var un = "calderhayes";
+    var text = un + "@" + "g" + "mail" + ".com";
+    $("#email").append("<a href='" + "mail" + "to:" + un + "@" + "g" + "mail" + ".com" + "'>" + text + "</a>");
+  </script>
 
 </body>
 </html>
