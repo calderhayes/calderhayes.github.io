@@ -30,3 +30,12 @@ img.profile {
   width:360px;
   height:270px;
 }
+
+ul.contact-info {
+  list-style: none;
+  padding-left: 15px;
+}
+
+span.link-icon {
+  color: #333;
+}
