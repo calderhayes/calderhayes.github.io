@@ -8,9 +8,6 @@
   <meta name="author" content="Calder Hayes">
 
   <title>Calder Hayes</title>
-
-  <!-- Syntaxhighlighter JS -->
-  <script type="text/javascript" src="libs/syntaxhighlighter/syntaxhighlighter.js"></script>
   
   <!-- Bootstrap -->
   <link type="text/css" rel="stylesheet" href="libs/bootstrap-3.3.7/css/bootstrap.min.css" />
@@ -173,7 +170,8 @@
 
 
 
-  
+  <!-- Syntaxhighlighter JS -->
+  <script type="text/javascript" src="libs/syntaxhighlighter/syntaxhighlighter.js"></script>
 
   <!-- jQuery -->
   <script src="libs/jquery-1.11.1/jquery.min.js"></script>
@@ -181,10 +179,11 @@
   <!-- Bootstrap Core JavaScript -->
   <script src="libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+
   <script type="text/javascript">
-    var un = "calderhayes";
-    var text = un + "@" + "g" + "mail" + ".com";
-    $("#email").append("<a href='" + "mail" + "to:" + un + "@" + "g" + "mail" + ".com" + "'>" + text + "</a>");
+    var t = getm();
+    $("#email").append("<a href='" + "mail" + "to:" + t + "'>" + t + "</a>");
   </script>
 
 </body>
