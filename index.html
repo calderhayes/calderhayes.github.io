@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Calder Hayes' Professional Website">
+  <meta name="author" content="Calder Hayes">
+
+  <title>Calder Hayes</title>
+
+  <!-- Syntaxhighlighter JS -->
+  <script type="text/javascript" src="libs/syntaxhighlighter/syntaxhighlighter.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="libs/bootstrap-3.3.7/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="libs/bootstrap-3.3.7/css/bootstrap-theme.min.css">
+
+  <!-- Syntaxhighlighter CSS -->
+  <link type="text/css" rel="stylesheet" href="libs/syntaxhighlighter/theme.css">
+  
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Custom CSS -->
+  <link type="text/css" rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsing-navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/index.html">
+          <img src="assets/images/terminal.png" alt="terminal" />
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="collapsing-navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+        <h1>Calder Hayes</h1>
+        <h3>Freelance Software Developer</h3>
+        <img src="assets/images/profile-pic.jpg" class="profile img-rounded" alt="profile" />
+        <p>
+          Some stuff about me
+        </p>
+        <hr />
+        <div class="row">
+          <div class="col-xs-12">
+            <p>
+              <strong><i class="fa fa-map-marker"></i> Address</strong>
+              <br />
+              Burlington Ontario Canada
+            </p>
+            <!--<p>
+              <strong><i class="fa fa-phone"></i> Phone Number</strong>
+              <br />
+              1 (519) 111 1111
+            </p>-->
+            <p>
+              <strong><i class="fa fa-envelope"></i>  Email Address</strong>
+              <br />
+              calderhayes@gmail.com
+            </p>
+            <p></p>
+          </div>
+        </div>   
+      </div>
+      <div class="col-lg-8">
+        
+        <p>
+          A blurb about myself here too?
+          Actual code below vvvv But will change with resume like stuff
+        </p>
+
+        <pre class="brush: csharp;">
+        using System;
+        using System.Text.RegularExpressions;
+         
+        namespace SharpVectors.Dom.Css
+        {
+          /// &lt;summary&gt;
+          /// The CSSFontFaceRule interface represents a @font-face rule in a CSS style sheet. The @font-face rule is used to hold a set of font descriptions.
+          /// &lt;/summary&gt;
+          /// &lt;developer&gt;niklas@protocol7.com&lt;/developer&gt;
+          /// &lt;completed&gt;80&lt;/completed&gt;
+          public class CssFontFaceRule : CssRule, ICssFontFaceRule
+          {
+              #region Static members
+              private static Regex regex = new Regeх(@&#34;^@font-face&#34;);
+               
+              /// &lt;summary&gt;
+              /// Parses a string containging CSS and creates a CssFontFaceRule instance if found as the first content
+              /// &lt;/summary&gt;
+              internal static CssRule Parse(ref string css, object parent, bool readOnly, string[] replacedStrings, CssStyleSheetType origin)
+              {
+                  Match match = regex.Match(css);
+                  if(match.Success)
+                  {
+                      CssFontFaceRule rule = new CssFontFaceRule(match, parent, readOnly, replacedStrings, origin);
+                      css = css.Substring(match.Length);
+         
+                      rule.style = new CssStyleDeclaration(ref css, rule, true, origin);
+         
+                      return rule;
+                  }
+                  else
+                  {
+                      // didn&#39;t match =&gt; do nothing
+                      return null;
+                  }
+              }
+              #endregion
+         
+              #region Constructors
+              /// &lt;summary&gt;
+              /// The constructor for CssFontFaceRule
+              /// &lt;/summary&gt;
+              /// &lt;param name=&#34;match&#34;&gt;The Regex match that found the charset rule&lt;/param&gt;
+              /// &lt;param name=&#34;parent&#34;&gt;The parent rule or parent stylesheet&lt;/param&gt;
+              /// &lt;param name=&#34;readOnly&#34;&gt;True if this instance is readonly&lt;/param&gt;
+              /// &lt;param name=&#34;replacedStrings&#34;&gt;An array of strings that have been replaced in the string used for matching. These needs to be put back use the DereplaceStrings method&lt;/param&gt;
+              /// &lt;param name=&#34;origin&#34;&gt;The type of CssStyleSheet&lt;/param&gt;
+              internal CssFontFaceRule(Match match, object parent, bool readOnly, string[] replacedStrings, CssStyleSheetType origin) : base(parent, true, replacedStrings, origin)
+              {
+                  // always read-only
+                   
+              }
+              #endregion
+         
+              #region Implementation of ICssFontFaceRule
+              private CssStyleDeclaration style;
+              /// &lt;summary&gt;
+              /// The declaration-block of this rule.
+              /// &lt;/summary&gt;
+              public ICssStyleDeclaration Style
+              {
+                  get
+                  {
+                      return style;
+                  }
+              }
+              #endregion
+         
+              #region Implementation of ICssRule
+              /// &lt;summary&gt;
+              /// The type of the rule. The expectation is that binding-specific casting methods can be used to cast down from an instance of the CSSRule interface to the specific derived interface implied by the type.
+              /// &lt;/summary&gt;
+              public override CssRuleType Type
+              {
+                  get
+                  {
+                      return CssRuleType.FontFaceRule;
+                  }
+              }
+              #endregion
+          }
+        }
+        </pre>
+
+      </div>
+    </div>
+
+  </div>
+  
+
+
+
+  
+
+  <!-- jQuery -->
+  <script src="libs/jquery-1.11.1/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
