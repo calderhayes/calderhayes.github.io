@@ -39,3 +39,16 @@ ul.contact-info {
 span.link-icon {
   color: #333;
 }
+
+.desc t {
+  color: #34495e;
+  font-weight: 700;
+}
+
+sm {
+  font-size: 12px;
+}
+
+.desc more {
+  color: #95a5a6;
+}
