@@ -132,11 +132,15 @@
       <div class="col-lg-8">
         
         <h4>
-          I am a freelance developer with a passion for solving problems with software. I specialize in back end systems with many different technologies. I have been involved with software for more than a decade and have worked in a professional capacity since 2009.
+          Hello, I am an independent software developer from South Western Ontario, Canada. I specialize in back end systems with many different technologies. I have been involved with software for more than a decade and have worked in a professional capacity since 2009.
         </h4>
 
         <p>
-          Please look through my <a href="experience.html">experience</a>, <a href="portfolio.html">portfolio</a> for some of my open source projects, <a href="services.html">services</a> for what I can provide you, and <a href="contact.html">contact</a> for how best to reach me.
+          Have a look through my <a href="experience.html">experience</a>, and my <a href="portfolio.html">open source portfolio</a>. Learn a bit more <a href="about.html">about me</a>, and then consider <a href="services.html">hiring me</a>.
+        </p>
+
+        <p>
+          You can best reach me by email at <a id="blurbm" href="#"></a>.
         </p>
 
         <pre class="brush: csharp;">
@@ -195,6 +199,7 @@
   <script type="text/javascript">
     var t = getm();
     $("#email").append("<a href='" + "mail" + "to:" + t + "'>" + t + "</a>");
+    $("#blurbm").text(t).attr("href", "mail" + "to:" + t);
   </script>
 
 </body>
