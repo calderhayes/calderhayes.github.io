@@ -8,14 +8,14 @@
   <meta name="author" content="Calder Hayes">
 
   <title>Portfolio</title>
-  
+
   <!-- Bootstrap -->
   <link type="text/css" rel="stylesheet" href="libs/bootstrap-3.3.7/css/bootstrap.min.css" />
   <link type="text/css" rel="stylesheet" href="libs/bootstrap-3.3.7/css/bootstrap-theme.min.css" />
 
   <!-- Font Awesome -->
   <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  
+
   <!-- Favicons -->
   <link rel="shortcut icon" type="image/x-icon" href="{{ "/assets/images/favicon.ico" | prepend: site.baseurl }}" />
   <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
@@ -122,7 +122,6 @@
         </ul>
       </div>
     </div>
-
   </div>
 
   <hr />
@@ -152,8 +151,39 @@
         </ul>
       </div>
     </div>
-
   </div>
+
+  <hr />
+
+  <div class="container desc">
+    <div class="row">
+      <div class="col-xs-12">
+        <p><t>SimpleFileControl</t><br/>
+          <a href="https://github.com/calderhayes/simple-file-control">GitHub</a> <br/>
+          <a href="https://preview.nuget.org/packages/SimpleFileControl/">NuGet</a> <br/>
+        </p>
+        <p>
+          I always seemed to recreate my file handlers by hand, and would usually couple them. It was always fine at first until I had a requirement change and would have to do a restructuring of the file control which usually was too coupled to the business logic.
+        </p>
+        <p>
+          I then created this utility to have an adjustable underlying component where I could easily handle multiple file storage types under the same interface.
+        </p>
+        <p>
+          When I decided to actually store this utility in its own repository and publish it as its own NuGet package, I discovered to my dismay the project <a href="https://github.com/visualeyes/cabinet">Cabinet</a>. It is more developed, larger community, more store implementations and has a cooler name.
+        </p>
+        <p>
+          I decided to launch this anyways just because, but if you are looking for something more mature I would pass you off to them.
+        </p>
+        <h5>FEATURES</h5>
+        <ul>
+          <li>Handy interface for several different kinds of file storage methods</li>
+          <li>Cross platform local disk store already implemented</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <br />
 
   <!-- jQuery -->
   <script src="libs/jquery-1.11.1/jquery.min.js"></script>
