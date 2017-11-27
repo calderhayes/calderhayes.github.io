@@ -1,6 +1,6 @@
 
 function getm() {
   var un = "calderhayes";
-  var text = "@" + "g" + "mail" + ".com";
+  var text = "@" + "proton" + "mail" + ".ch";
   return un + text;
 }
