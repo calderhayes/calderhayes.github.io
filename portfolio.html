@@ -1,255 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Calder Hayes' Professional Website">
   <meta name="author" content="Calder Hayes">
 
   <title>Portfolio</title>
 
-  <!-- Bootstrap -->
-  <link type="text/css" rel="stylesheet" href="libs/bootstrap-3.3.7/css/bootstrap.min.css" />
-  <link type="text/css" rel="stylesheet" href="libs/bootstrap-3.3.7/css/bootstrap-theme.min.css" />
-
-  <!-- Font Awesome -->
-  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+  <!-- Custom CSS -->
+  <link type="text/css" rel="stylesheet" href="assets/styles/styles.css" />
   <!-- Favicons -->
   <link rel="shortcut icon" type="image/x-icon" href="{{ "/assets/images/favicon.ico" | prepend: site.baseurl }}" />
   <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-  <!-- Custom CSS -->
-  <link type="text/css" rel="stylesheet" href="assets/styles/styles.css" />
+    <!-- Font Awesome -->
+  <link type="text/css" rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css" />
 </head>
+
 <body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsing-navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/index.html">
-          <img src="assets/images/terminal.png" alt="terminal" />
-        </a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="collapsing-navbar">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="services.html">Services</a>
-          </li>
-          <li>
-            <a href="experience.html">Experience</a>
-          </li>
-          <li>
-            <a href="portfolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-  </nav>
-
-
-  <!-- Page Content -->
-  <div class="container">
-
-    <h1>Portfolio</h1>
-
-    <div class="row">
-      <div class="col-xs-12">
-        <p>
-          Much of my work has been involved with proprietary systems but I have always admired the Open Source movement, and in the past year I have tried to contribute back to the community.
-        </p>
-        <p>
-          Creating these projects in my spare time allowed me to consolidate much of what I have learned while working with these technologies. I can now use these as a starting point for future projects, and hopefully someone in the community can either use it or learn from it as well.
-        </p>
-      </div>
+  <header>
+    <div style="float:left;">
+      <h1>Portfolio</h1>
     </div>
 
-  </div>
-
-  <hr />
-
-  <div class="container desc">
-    <div class="row">
-      <div class="col-xs-12">
-        <p><t>.NET Core API Boilerplate</t><br/>
-          <a href="https://github.com/calderhayes/dotnet-boilerplate">GitHub</a> <br/>
-        </p>
-        <p>
-          I started with this project because I knew that any future projects I would like to participate in, I would be eager to use the upcoming .NET Core technology. It is fairly bleeding edge so it was difficult at first, but I really enjoy it and I look forward to its continuing maturity.
-        </p>
-        <p>
-          I tried to include all of the best practices I can think of, and using only cross platform, and self contained technology (VS Code intead of VS Studio, PostreSQL instead of SQL Server). Docker was a real help to pull this off efficiently.
-        </p>
-        <p>
-          This boilerplate template is nearing completion, and I hope to use it in my next project.
-        </p>
-        <h5>FEATURES</h5>
-        <ul>
-          <li>Full cross platform, self contained to local machine for development</li>
-          <li>Dockerfile for external systems: SMTP and PostgreSQL servers</li>
-          <li>Full code warning analysis during build</li>
-          <li>HangFire, SignalR (alpha version), EF Core, and all of the .NET Core ported libraries</li>
-          <li>Unit testability</li>
-          <li>Lots more</li>
-        </ul>
-      </div>
+    <div style="display:inline-block;">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+        <li>
+          <a href="experience.html">Experience</a>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
-  </div>
+  </header>
 
-  <hr />
 
-  <div class="container desc">
-    <div class="row">
-      <div class="col-xs-12">
-        <p><t>ReactJS Flux Boilerplate</t><br/>
-          <a href="https://github.com/calderhayes/react-boilerplate">GitHub</a> <br/>
-        </p>
-        <p>
-          As a back-end preferred developer, I always found the NodeJS/JavaScript/NPM ecosystem to be a bit confusing and chaotic. I could get things up and running, but I never felt like I had things done properly, and often missed things that had to be wedged in later.
-        </p>
-        <p>
-          This project began as an attempt to consolidate all the different things I had learned on the fly across all the different projects in which I used ReactJS.
-        </p>
-        <p>
-          I am a huge fan of the ReactJS technology, and the Flux data state patterns. The scalability and opinionated style really appeals to me. I also included various utilities that I found incredibly useful, such as Typescript, ImmutableJS, Webpack, and much more.
-        </p>
-        <h5>FEATURES</h5>
-        <ul>
-          <li>Fully configured ReactJS app with Flux data state management</li>
-          <li>Dependency Injection style for easy testability</li>
-          <li>Static analysis through Typescript and tslint</li>
-          <li>Swappable API layer to aid with developing through mock API calls</li>
-          <li>Lots more</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <p>
+    Much of my work has been involved with proprietary systems but I have always admired the Open Source movement, and in the past year I have tried to contribute back to the community.
+  </p>
 
-  <hr />
+  <p>
+    Creating these projects in my spare time allowed me to consolidate much of what I have learned while working with these technologies. I can now use these as a starting point for future projects, and hopefully someone in the community can either use it or learn from it as well.
+  </p>
 
-  <div class="container desc">
-    <div class="row">
-      <div class="col-xs-12">
-        <p><t>Datos</t><br/>
-          <a href="https://github.com/calderhayes/datos">GitHub</a> <br/>
-          <a href="https://www.npmjs.com/package/datos">NPM</a> <br/>
-        </p>
-        <p>
-          A simple ReactJS form utility to enable easy validation with minimal dependencies and written in TypeScript.
-        </p>
-        <p>
-          Current solutions were not meeting my needs more my style. I ended up creating much of the components I required anyways, so I decided to make a simple utility until something more main stream meets my needs.
-        </p>
-        <h5>FEATURES</h5>
-        <ul>
-          <li>Minimal dependencies</li>
-          <li>Built in TypeScript</li>
-          <li>Allows for easy validation, and manual validation errors from server responses</li>
-          <li>Using modern techniques</li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
-  <hr />
+  <h2>.NET Core API Boilerplate</h2>
 
-  <div class="container desc">
-    <div class="row">
-      <div class="col-xs-12">
-        <p><t>Articulog</t><br/>
-          <a href="https://github.com/calderhayes/articulog">GitHub</a> <br/>
-          <a href="https://www.npmjs.com/package/articulog">NPM</a> <br/>
-        </p>
-        <p>
-          A simple typescript/javascript logging wrapper. Inspired by <a href="https://github.com/net-commons/common-logging">Common Logging</a>, <a href="https://github.com/pimterry/loglevel">LogLevel</a>, and <a href="https://github.com/winstonjs/winston">Winston</a>
-        </p>
-        <p>
-          I am very concerned about logging with most projects I work on. I wanted something that played nice with TypeScript, and could have granular control on what is logged and how it is logged.
-        </p>
-        <h5>FEATURES</h5>
-        <ul>
-          <li>Swappable typescript interface for logging</li>
-          <li>Several log levels that can be adjusted dynamically</li>
-          <li>Several categories of logs</li>
-          <li>Allows for easy crafting of different log targets</li>
-          <li>A top level control to allow for configuring of logs dynamically, and as a group</li>
-          <li>Little to no dependencies (for simple logging)</li>
-          <li>Useful for both browser and nodejs environments</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <a href="https://github.com/calderhayes/dotnet-boilerplate">GitHub</a>
 
-  <hr />
+  <p>
+    I started with this project because I knew that any future projects I would like to participate in, I would be eager to use the upcoming .NET Core technology. It is fairly bleeding edge so it was difficult at first, but I really enjoy it and I look forward to its continuing maturity.
+  </p>
 
-  <div class="container desc">
-    <div class="row">
-      <div class="col-xs-12">
-        <p><t>SimpleFileControl</t><br/>
-          <a href="https://github.com/calderhayes/simple-file-control">GitHub</a> <br/>
-          <a href="https://preview.nuget.org/packages/SimpleFileControl/">NuGet</a> <br/>
-        </p>
-        <p>
-          I always seemed to recreate my file handlers by hand, and would usually couple them. It was always fine at first until I had a requirement change and would have to do a restructuring of the file control which usually was too coupled to the business logic.
-        </p>
-        <p>
-          I then created this utility to have an adjustable underlying component where I could easily handle multiple file storage types under the same interface.
-        </p>
-        <p>
-          When I decided to actually store this utility in its own repository and publish it as its own NuGet package, I discovered to my dismay the project <a href="https://github.com/visualeyes/cabinet">Cabinet</a>. It is more developed, larger community, more store implementations and has a cooler name.
-        </p>
-        <p>
-          I decided to launch this anyways just because, but if you are looking for something more mature I would pass you off to them.
-        </p>
-        <h5>FEATURES</h5>
-        <ul>
-          <li>Handy interface for several different kinds of file storage methods</li>
-          <li>Cross platform local disk store already implemented</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <p>
+    I tried to include all of the best practices I can think of, and using only cross platform, and self contained technology (VS Code intead of VS Studio, PostreSQL instead of SQL Server). Docker was a real help to pull this off efficiently.
+  </p>
 
-  <br />
+  <p>
+    This boilerplate template is nearing completion, and I hope to use it in my next project.
+  </p>
 
-  <!-- jQuery -->
-  <script src="libs/jquery-1.11.1/jquery.min.js"></script>
+  <h3>Features</h3>
+  <ul>
+    <li>Full cross platform, self contained to local machine for development</li>
+    <li>Dockerfile for external systems: SMTP and PostgreSQL servers</li>
+    <li>Full code warning analysis during build</li>
+    <li>HangFire, SignalR (alpha version), EF Core, and all of the .NET Core ported libraries</li>
+    <li>Unit testability</li>
+    <li>Lots more</li>
+  </ul>
 
-  <!-- Bootstrap Core JavaScript -->
-  <script src="libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 
-  <script type="text/javascript" src="assets/js/custom.js"></script>
+  <h2>ReactJS Flux Boilerplate</h2>
 
-  <script type="text/javascript">
-  </script>
+  <a href="https://github.com/calderhayes/react-boilerplate">GitHub</a>
+
+  <p>
+    As a back-end preferred developer, I always found the NodeJS/JavaScript/NPM ecosystem to be a bit confusing and chaotic. I could get things up and running, but I never felt like I had things done properly, and often missed things that had to be wedged in later.
+  </p>
+
+  <p>
+    This project began as an attempt to consolidate all the different things I had learned on the fly across all the different projects in which I used ReactJS.
+  </p>
+
+  <p>
+    I am a huge fan of the ReactJS technology, and the Flux data state patterns. The scalability and opinionated style really appeals to me. I also included various utilities that I found incredibly useful, such as Typescript, ImmutableJS, Webpack, and much more.
+  </p>
+
+  <h3>Features</h3>
+  <ul>
+    <li>Fully configured ReactJS app with Flux data state management</li>
+    <li>Dependency Injection style for easy testability</li>
+    <li>Static analysis through Typescript and tslint</li>
+    <li>Swappable API layer to aid with developing through mock API calls</li>
+    <li>Lots more</li>
+  </ul>
+
+
+  <h2>Datos</h2>
+
+  <a href="https://github.com/calderhayes/datos">GitHub</a>
+  <a href="https://www.npmjs.com/package/datos">NPM</a>
+
+  <p>
+    A simple ReactJS form utility to enable easy validation with minimal dependencies and written in TypeScript.
+  </p>
+
+  <p>
+    Current solutions were not meeting my needs more my style. I ended up creating much of the components I required anyways, so I decided to make a simple utility until something more main stream meets my needs.
+  </p>
+
+  <h3>Features</h3>
+  <ul>
+    <li>Minimal dependencies</li>
+    <li>Built in TypeScript</li>
+    <li>Allows for easy validation, and manual validation errors from server responses</li>
+    <li>Using modern techniques</li>
+  </ul>
+
+
+  <h2>Articulog</h2>
+
+  <a href="https://github.com/calderhayes/articulog">GitHub</a>
+  <a href="https://www.npmjs.com/package/articulog">NPM</a>
+
+  <p>
+    A simple typescript/javascript logging wrapper. Inspired by <a href="https://github.com/net-commons/common-logging">Common Logging</a>, <a href="https://github.com/pimterry/loglevel">LogLevel</a>, and <a href="https://github.com/winstonjs/winston">Winston</a>
+  </p>
+  <p>
+    I am very concerned about logging with most projects I work on. I wanted something that played nice with TypeScript, and could have granular control on what is logged and how it is logged.
+  </p>
+  <h3>Features</h3>
+  <ul>
+    <li>Swappable typescript interface for logging</li>
+    <li>Several log levels that can be adjusted dynamically</li>
+    <li>Several categories of logs</li>
+    <li>Allows for easy crafting of different log targets</li>
+    <li>A top level control to allow for configuring of logs dynamically, and as a group</li>
+    <li>Little to no dependencies (for simple logging)</li>
+    <li>Useful for both browser and nodejs environments</li>
+  </ul>
+
+
+  <h2>SimpleFileControl</h2>
+
+  <a href="https://github.com/calderhayes/simple-file-control">GitHub</a>
+  <a href="https://preview.nuget.org/packages/SimpleFileControl/">NuGet</a>
+
+  <p>
+    I always seemed to recreate my file handlers by hand, and would usually couple them. It was always fine at first until I had a requirement change and would have to do a restructuring of the file control which usually was too coupled to the business logic.
+  </p>
+  <p>
+    I then created this utility to have an adjustable underlying component where I could easily handle multiple file storage types under the same interface.
+  </p>
+  <p>
+    When I decided to actually store this utility in its own repository and publish it as its own NuGet package, I discovered to my dismay the project <a href="https://github.com/visualeyes/cabinet">Cabinet</a>. It is more developed, larger community, more store implementations and has a cooler name.
+  </p>
+  <p>
+    I decided to launch this anyways just because, but if you are looking for something more mature I would pass you off to them.
+  </p>
+  <h3>Features</h3>
+  <ul>
+    <li>Handy interface for several different kinds of file storage methods</li>
+    <li>Cross platform local disk store already implemented</li>
+  </ul>
 
 </body>
+
 </html>
